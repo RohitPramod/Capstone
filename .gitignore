@@ -1,0 +1,29 @@
+# Local Python environments and caches
+/venv/
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and desktop metadata
+.env
+.env.*
+!.env.example
+/.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Downloaded BSDS500 data and generated visualizations
+/dataset/
+/outputs/*
+!/outputs/conv1_filter_0.json
+!/outputs/quantized_conv1_filter_0.json
+!/outputs/training_history.csv
+!/outputs/loss_curve.png
+
+# Keep the small trained checkpoint needed for the inference demo.
+/models/*
+!/models/best_model.pth
